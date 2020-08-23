@@ -1,4 +1,4 @@
-package com.gigaspaces.training.security;
+package security;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

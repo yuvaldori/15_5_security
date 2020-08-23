@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="15_5_security" />
+        <module name="SecuredGrid" />
+        <module name="SecuredSpace" />
       </profile>
     </annotationProcessing>
   </component>
