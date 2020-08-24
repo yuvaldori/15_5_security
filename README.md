@@ -11,12 +11,14 @@
 ### Writing to a Secured Space - Lab Exercise
 #### Requirements: <br />
 1. Write a PU contains: <br />
-    a) A secured Embedded Space <br />
-    b) A Feeder that will connect to this space using a secured proxy and write data to Space. <br /> 
-2. The Feeder should write automatically right after deploying the PU <br />
-3. Use Spring Bean in your solution.
+    a) a secured embedded space configured in the pu.xml (use plain text for the user/password) <br />
+    b) a Spring Bean for the Feeder <br />
+       the Feeder will have 2 methods: <br />
+            public GigaSpace gigaSpaceProxy() - for connecting to the secured space <br />
+            public void afterPropertiesSet() - for writing data <br />
+    
 
 #### Questions: <br />
-3. What user will you use?
-4. What privileges this user should have?
+1. What user will you use? <br />
+2. What privileges this user should have?
 
