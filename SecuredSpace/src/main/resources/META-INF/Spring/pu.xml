@@ -30,11 +30,11 @@
     <os-remoting:annotation-support />
 
 
-    <os-core:embedded-space id="space" space-name="mySpace">
+    <os-core:embedded-space id="space" space-name="demo">
         <os-core:security username="adam" password="adam" />
     </os-core:embedded-space>
 
-    <bean id="proxy" class="security.MyFeeder"
+    <bean id="feeder" class="security.MyFeeder"
           init-method="afterPropertiesSet">
     </bean>
 

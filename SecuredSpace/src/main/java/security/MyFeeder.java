@@ -4,6 +4,7 @@ import com.gigaspaces.client.WriteModifiers;
 import org.openspaces.core.GigaSpace;
 import org.openspaces.core.GigaSpaceConfigurer;
 import org.openspaces.core.space.EmbeddedSpaceConfigurer;
+import org.openspaces.core.space.SpaceProxyConfigurer;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Bean;
 
@@ -11,7 +12,7 @@ public class MyFeeder implements InitializingBean {
 
     @Bean
     public GigaSpace gigaSpaceProxy() {
-        EmbeddedSpaceConfigurer urlSpaceConfigurer = new EmbeddedSpaceConfigurer("mySpace").secured(true)
+        SpaceProxyConfigurer urlSpaceConfigurer = new SpaceProxyConfigurer("demo")
                 .credentials("adam","adam");
 
         return new GigaSpaceConfigurer(urlSpaceConfigurer).gigaSpace();
