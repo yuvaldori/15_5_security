@@ -31,7 +31,7 @@
 
 
     <os-core:embedded-space id="space" space-name="demo">
-        <os-core:security username="adam" password="adam" />
+        <os-core:security username="gs-admin" password="gs-admin" />
     </os-core:embedded-space>
 
     <bean id="feeder" class="security.MyFeeder"
